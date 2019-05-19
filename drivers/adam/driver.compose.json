@@ -7,9 +7,11 @@
     "boiler_state",
     "DHW_state",
     "modulation_level",
+    "measure_pressure",
     "measure_temperature.intended",
     "measure_temperature.boiler",
     "measure_temperature.return",
+    "measure_temperature.outdoor",
     "boiler_status_code",
     "boiler_error_code",
     "DHW_mode"
