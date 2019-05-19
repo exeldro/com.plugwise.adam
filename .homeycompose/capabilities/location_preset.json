@@ -8,6 +8,13 @@
   "type": "enum",
   "values": [
     {
+      "id": "none",
+      "title": {
+        "en": "Manual",
+        "nl": "Handmatig"
+      }
+    },
+    {
       "id": "home",
       "title": {
         "en": "Home",
