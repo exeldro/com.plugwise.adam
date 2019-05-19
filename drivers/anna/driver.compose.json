@@ -6,8 +6,10 @@
   "class": "thermostat",
   "capabilities": [
     "target_temperature",
+    "location_preset",
     "measure_temperature",
-    "location_preset"
+    "alarm_motion",
+    "measure_luminance"
   ],
   "capabilitiesOptions": {
     "target_temperature": {

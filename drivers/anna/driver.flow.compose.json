@@ -1,0 +1,92 @@
+{
+  "triggers": [],
+  "conditions": [],
+  "actions": [
+    {
+      "id": "Set_DHW_mode",
+      "title": {
+        "en": "Set domestic hot water mode",
+        "nl": "Verander de tapwater comfort modus"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "on",
+              "label": {
+                "en": "Comfort",
+                "nl": "Comfort"
+              }
+            },
+            {
+              "id": "off",
+              "label": {
+                "en": "Normal",
+                "nl": "Normaal"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Set_Location_Preset",
+      "title": {
+        "en": "Change the preset",
+        "nl": "Stel scene in"
+      },
+      "args": [
+        {
+          "name": "preset",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "none",
+              "title": {
+                "en": "Manual",
+                "nl": "Handmatig"
+              }
+            },
+            {
+              "id": "home",
+              "title": {
+                "en": "Home",
+                "nl": "Thuis"
+              }
+            },
+            {
+              "id": "away",
+              "title": {
+                "en": "Away",
+                "nl": "Weg"
+              }
+            },
+            {
+              "id": "asleep",
+              "title": {
+                "en": "Night",
+                "nl": "Nacht"
+              }
+            },
+            {
+              "id": "vacation",
+              "title": {
+                "en": "Vacation",
+                "nl": "Vakantie"
+              }
+            },
+            {
+              "id": "no_frost",
+              "title": {
+                "en": "Frost protection",
+                "nl": "Anti-vries"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
