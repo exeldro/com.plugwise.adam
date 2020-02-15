@@ -65,6 +65,102 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Set_DHW_mode",
+        "title": {
+          "en": "Set domestic hot water mode",
+          "nl": "Verander de tapwater comfort modus"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=anna"
+          },
+          {
+            "name": "mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "on",
+                "label": {
+                  "en": "Comfort",
+                  "nl": "Comfort"
+                }
+              },
+              {
+                "id": "off",
+                "label": {
+                  "en": "Normal",
+                  "nl": "Normaal"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Set_Location_Preset",
+        "title": {
+          "en": "Change the preset",
+          "nl": "Stel scene in"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=anna"
+          },
+          {
+            "name": "preset",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "none",
+                "title": {
+                  "en": "Manual",
+                  "nl": "Handmatig"
+                }
+              },
+              {
+                "id": "home",
+                "title": {
+                  "en": "Home",
+                  "nl": "Thuis"
+                }
+              },
+              {
+                "id": "away",
+                "title": {
+                  "en": "Away",
+                  "nl": "Weg"
+                }
+              },
+              {
+                "id": "asleep",
+                "title": {
+                  "en": "Night",
+                  "nl": "Nacht"
+                }
+              },
+              {
+                "id": "vacation",
+                "title": {
+                  "en": "Vacation",
+                  "nl": "Vakantie"
+                }
+              },
+              {
+                "id": "no_frost",
+                "title": {
+                  "en": "Frost protection",
+                  "nl": "Anti-vries"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -78,9 +174,11 @@
         "boiler_state",
         "DHW_state",
         "modulation_level",
+        "measure_pressure",
         "measure_temperature.intended",
         "measure_temperature.boiler",
         "measure_temperature.return",
+        "measure_temperature.outdoor",
         "boiler_status_code",
         "boiler_error_code",
         "DHW_mode"
@@ -207,8 +305,10 @@
       "class": "thermostat",
       "capabilities": [
         "target_temperature",
+        "location_preset",
         "measure_temperature",
-        "location_preset"
+        "alarm_motion",
+        "measure_luminance"
       ],
       "capabilitiesOptions": {
         "target_temperature": {
@@ -652,6 +752,13 @@
       "setable": true,
       "type": "enum",
       "values": [
+        {
+          "id": "none",
+          "title": {
+            "en": "Manual",
+            "nl": "Handmatig"
+          }
+        },
         {
           "id": "home",
           "title": {

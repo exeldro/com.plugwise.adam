@@ -17,7 +17,7 @@ module.exports = class PlugwiseAdamHADevice extends PlugwiseAdamDevice {
   onPoll({ appliance }) {
     // console.log(JSON.stringify(appliance.logs, false, 2));
 
-      if( appliance.logs
+      if(appliance && appliance.logs
           && Array.isArray(appliance.logs.point_log) ) {
           appliance.logs.point_log.forEach(log => {
 
